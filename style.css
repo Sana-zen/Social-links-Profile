@@ -1,0 +1,128 @@
+/* Google font: Inter */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Reset Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+  --green-accent: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --gray-700: hsl(0, 0%, 20%);
+  --gray-800: hsl(0, 0%, 12%);
+  --gray-900: hsl(0, 0%, 8%);
+}
+
+body {
+   font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: var(--gray-900);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.profile-card {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  background-color: var(--gray-800);
+  padding: 1.5rem;
+  color: var(--white);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-image {
+  width: 80px;
+  height: 80px;
+  display: block;
+  border-radius: 50%;
+  margin: 1rem auto;
+}
+
+.user-name {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+address {
+  font-style: normal;
+  font-size: 0.933rem;
+  text-align: center;
+  color: var(--green-accent);
+  padding: 0.6rem;
+}
+
+.user-role {
+  font-size: 0.8rem;
+  white-space: nowrap;
+  text-align: center;
+  margin: 0.7rem auto 1rem auto;
+}
+
+.social-links li {
+  background-color: var(--gray-700);
+  margin: 0.8rem;
+  padding: 0.6rem;
+  border-radius: 8px;
+  text-align: center;
+  list-style: none;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--gray-900);
+}
+
+.profile-card:hover {
+  transform: scale(1.03);
+}
+
+
+li:hover {
+  background-color: var(--green-accent);
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px ) {
+  .profile-card {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+  li {
+    font-size: 0.9rem;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: var(--white);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
